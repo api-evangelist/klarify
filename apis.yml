@@ -1,22 +1,93 @@
 aid: klarify
 name: Klarify
-description: Klarify is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Klarify is a San Francisco and Canada based mental-health technology
+  company building an AI assistant, "Klara", for licensed therapists. The product handles
+  the administrative and operational work around therapy rather than the therapy itself:
+  an AI scribe that turns recorded sessions into structured clinical notes across 20+
+  note formats, treatment-plan generation, clinical letters and assessment reports,
+  insurance claim filing and form completion, session preparation, between-session
+  client resources and worksheets, supervision prep, and visual session mindmaps, with
+  support for many languages. Klarify also operates a public directory of licensed
+  therapists and clinics across Canada and the US, where profiles, FAQs, and long-form
+  articles are authored and verified by the clinicians themselves. The company states
+  HIPAA, PIPEDA, PHIPA, and UK GDPR compliance, stores permanent records in Canada,
+  deletes session audio after 14 days, and does not train models on customer session
+  data. Founded in 2024 by Moody Abdul (CEO, previously co-founder of Circleback.ai)
+  and Alexander Bergholm (CTO, formerly LLM infrastructure at Workday), Klarify is
+  part of Y Combinator''s Spring 2026 batch. Klarify publishes no public developer
+  API: its llms.txt explicitly marks paths under /api/ as internal infrastructure.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://framerusercontent.com/images/6YiZfnEHnH0uv93kB3FSdyMxXKk.png
 url: https://raw.githubusercontent.com/api-evangelist/klarify/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: enriched-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health Care
+- Mental Health
+- Artificial Intelligence
+- Clinical Documentation
+- Medical Records
+- Insurance
+- Practice Management
+- Vertical SaaS
+- Directory
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Website
+  url: https://www.klarify.ca/
+- type: Documentation
+  url: https://intercom.help/klarify/en/
+- type: Support
+  url: https://intercom.help/klarify/en/
+- type: Blog
+  url: https://www.klarify.ca/blogs
+- type: Pricing
+  url: https://www.klarify.ca/#pricing
+- type: SignUp
+  url: https://app.klarify.ca/auth/therapist/register
+- type: Login
+  url: https://app.klarify.ca/auth/therapist/login
+- type: TermsOfService
+  url: https://www.klarify.ca/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.klarify.ca/legal/privacy-policy
+- type: CookiePolicy
+  url: https://www.klarify.ca/legal/cookies
+- type: About
+  url: https://www.klarify.ca/about
+- type: Compliance
+  url: https://www.klarify.ca/legal/privacy-policy
+- type: LLMsTxt
+  url: llms/klarify-llms.txt
+- type: Conformance
+  url: conformance/klarify-conformance.yml
+- type: DomainSecurity
+  url: security/klarify-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
