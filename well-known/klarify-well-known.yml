@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://www.klarify.ca/.well-known/*
+host: https://www.klarify.ca
+note: >-
+  No /.well-known/ discovery documents are published. Every probed path returned
+  404. Recorded as a negative result; no WellKnown pointer is wired in apis.yml
+  because no discovery document exists. Klarify publishes no public developer API
+  (its llms.txt marks /api/ paths as internal infrastructure), so an OAuth/OIDC
+  discovery surface is not expected.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+related:
+- path: /llms.txt
+  status: 200
+  file: ../llms/klarify-llms.txt
+- path: /robots.txt
+  status: 200
+- path: /sitemap-index.xml
+  status: 200

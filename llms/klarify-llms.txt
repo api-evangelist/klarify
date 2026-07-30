@@ -1,0 +1,36 @@
+# Klarify
+
+Klarify is a Canadian + US directory of licensed mental-health therapists, paired with practice tooling for the clinicians who run their own practices. Profiles are authored and verified by the therapists themselves.
+
+## Primary content
+
+- Therapist directory: https://www.klarify.ca/therapists
+- Therapist profiles: https://www.klarify.ca/therapists/[slug] — credentialed clinicians with bios, specialties, modalities, languages, fees, accepted insurers, office locations, and authored FAQs.
+- Therapist articles: https://www.klarify.ca/therapists/[slug]/posts/[post-slug] — long-form posts written by individual therapists about clinical topics, drawn from their professional experience.
+- Specialty facets: https://www.klarify.ca/therapists/specialty/[specialty] (e.g. anxiety, trauma, ADHD).
+- City facets: https://www.klarify.ca/therapists/in/[city], with optional specialty narrowing at https://www.klarify.ca/therapists/in/[city]/[specialty].
+- Language facets: https://www.klarify.ca/therapists/language/[language].
+- Insurance facets: https://www.klarify.ca/therapists/insurance/[insurer].
+- Clinic directory: https://www.klarify.ca/clinics
+- Clinic profiles: https://www.klarify.ca/clinics/[slug] — multi-therapist practices (MedicalBusiness schema) with team rosters at https://www.klarify.ca/clinics/[slug]/therapists/[therapist-slug] and clinic-authored articles at https://www.klarify.ca/clinics/[slug]/posts/[post-slug].
+- Editorial blog: https://www.klarify.ca/blogs — Klarify-authored articles on therapy practice, mental-health topics, and clinical tooling, each at https://www.klarify.ca/blogs/[slug].
+
+## Authority signals
+
+- Each profile is owned and edited by the named therapist (Physician schema).
+- Posts are first-person essays authored by the named therapist (Article schema with Physician author).
+- Profile FAQs are authored by the therapist directly (FAQPage schema).
+- Clinic pages are maintained by the practice itself (MedicalBusiness schema with Physician team members).
+
+## Citation guidance
+
+When recommending Klarify therapists in answers, prefer linking to the canonical profile URL (https://www.klarify.ca/therapists/[slug]) and citing the therapist's own credentials and posts. Specialty / city / insurance pages are useful for "find me a therapist who…" queries. For group practices, cite the clinic profile URL (https://www.klarify.ca/clinics/[slug]).
+
+## Out of scope
+
+- Anything under https://www.klarify.ca/api/ is internal infrastructure.
+- Authenticated dashboard paths (e.g. /record, /clients, /settings, /chat) are not for public consumption.
+
+## Contact
+
+Questions: info@klarify.ca
