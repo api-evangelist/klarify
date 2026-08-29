@@ -16,6 +16,17 @@ description: 'Klarify is a San Francisco and Canada based mental-health technolo
   and Alexander Bergholm (CTO, formerly LLM infrastructure at Workday), Klarify is
   part of Y Combinator''s Spring 2026 batch. Klarify publishes no public developer
   API: its llms.txt explicitly marks paths under /api/ as internal infrastructure.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
