@@ -1,0 +1,57 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.klarify.ca/#pricing
+sources:
+- https://www.klarify.ca/#pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: tiered-subscription
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Currency toggle offers USD/CAD/GBP/EUR; monthly/yearly (Save 20%) toggle. Clinic/group rates via
+  email. Pricing is per therapist.
+plan_count: 4
+currency: USD
+plans:
+- name: Seed
+  price_text: $0 /month
+  price: 0
+  currency: USD
+  period: month
+  unit: per therapist
+  included_quota: 10 sessions/month, Limited Klara AI access, 19 note types + custom templates, Multi-language
+    support
+- name: Sprout
+  price_text: $16 /month
+  price: 16
+  currency: USD
+  period: month
+  unit: per therapist
+  included_quota: 70 sessions/month, Basic Klara AI access, Email support
+- name: Bloom
+  price_text: $32 /month
+  price: 32
+  currency: USD
+  period: month
+  unit: per therapist
+  included_quota: 130 sessions/month, 2x Sprout's Klara AI limits, Phone support
+- name: Forest
+  price_text: $71 /month
+  price: 71
+  currency: USD
+  period: month
+  unit: per therapist
+  included_quota: Unlimited sessions, 8x Sprout's Klara AI limits, Premium support
+rate_limit_statements:
+- Notes per session 5 10 10 15
+- Response length ~3,000 words ~3,000 words ~6,000 words ~9,000 words
+- Web searches per month 1 20 40 Unlimited
+- Sessions per chat 2 5 10 20
+- Files per chat 1 2 3 5
