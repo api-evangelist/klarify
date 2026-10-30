@@ -64,21 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Klarify is a San Francisco and Canada based mental-health technology company building an AI assistant, "Klara", for licensed therapists. The product handles the administrative and operational work around therapy rather than the therapy itself: an AI scribe that turns recorded sessions into structured clinical notes across 20+ note formats, treatment-plan generation, clinical letters and assessment reports, insurance claim filing and form completion, session preparation, between-session client resources, supervision prep, and visual session mindmaps. Klarify also operates a public directory of licensed therapists and clinics across Canada and the US, where profiles and articles are authored by the clinicians themselves.
+Klarify is a San Francisco and Canada based mental-health technology company building an AI assistant, "Klara", for licensed therapists. The product handles the administrative and operational work around therapy rather than the therapy itself: an AI scribe that turns recorded sessions into structured clinical notes across 20+ note formats, treatment-plan generation, clinical letters and assessment reports, insurance claim filing and form completion, session preparation, between-session client resources and worksheets, supervision prep, and visual session mindmaps, with support for many languages. Klarify also operates a public directory of licensed therapists and clinics across Canada and the US, where profiles, FAQs, and long-form articles are authored and verified by the clinicians themselves. The company states HIPAA, PIPEDA, PHIPA, and UK GDPR compliance, stores permanent records in Canada, deletes session audio after 14 days, and does not train models on customer session data. Founded in 2024 by Moody Abdul (CEO, previously co-founder of Circleback.ai) and Alexander Bergholm (CTO, formerly LLM infrastructure at Workday), Klarify is part of Y Combinator's Spring 2026 batch. Klarify publishes no public developer API: its llms.txt explicitly marks paths under /api/ as internal infrastructure.
 
-Founded in 2024 by Moody Abdul (CEO) and Alexander Bergholm (CTO). Backed by: y-combinator (Spring 2026 batch).
+**Areas:** Company · Healthcare · Mental Health · Artificial Intelligence · Clinical Documentation · Medical Records · Insurance · Practice Management · Vertical SaaS · Directory
 
-- Website: https://www.klarify.ca/
-- Help center: https://intercom.help/klarify/en/
-- Blog: https://www.klarify.ca/blogs
+## Klarify on APIs.io
 
-## API surface
+Everything profiled for Klarify is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/klarify/](https://apis.io/providers/klarify/)** — or go straight to one of the APIs or properties below.
 
-**Klarify publishes no public developer API.** Its `llms.txt` explicitly marks paths under `/api/` as internal infrastructure, and no OpenAPI, SDKs, CLI, MCP server, webhooks, sandbox, or `/.well-known/` discovery documents were found. Spec-dependent artifacts (openapi, overlays, scopes, errors, data model, agent skills, Arazzo) are therefore not applicable rather than missing.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- `llms/klarify-llms.txt` — the provider's own `llms.txt`, saved verbatim (a genuinely well-authored one).
-- `conformance/klarify-conformance.yml` — self-asserted HIPAA / PIPEDA / PHIPA / UK GDPR posture, data-handling commitments, and disclosed subprocessors.
-- `security/klarify-domain-security.yml` — probed TLS / HSTS / DNSSEC / CAA / SPF / DMARC.
-- `well-known/klarify-well-known.yml` — negative result: no `/.well-known/` documents published.
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Klarify Domain Security](https://apis.io/security/klarify/klarify-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Klarify Plans Pricing](https://apis.io/plans/klarify/klarify-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.klarify.ca/)
+- [Documentation](https://intercom.help/klarify/en/)
+- [Pricing](https://www.klarify.ca/#pricing)
+- [Sign up](https://app.klarify.ca/auth/therapist/register)
+- [Support](https://intercom.help/klarify/en/)
+- [Blog](https://www.klarify.ca/blogs)
+- [Compliance](https://www.klarify.ca/legal/privacy-policy)
+- [Terms of service](https://www.klarify.ca/legal/terms-of-service)
+- [Privacy policy](https://www.klarify.ca/legal/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 26.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 72.4 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/klarify/](https://apis.io/providers/klarify/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Klarify: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/klarify/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
